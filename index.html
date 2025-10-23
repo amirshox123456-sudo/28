@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>28-SCHOOL Official</title>
+  <meta name="description" content="28-SCHOOL Official — rasmiy maktab sayti" />
+  <style>
+    :root{--accent:#0056d6;--muted:#666;--bg:#f7f9fc}
+    *{box-sizing:border-box}
+    body{font-family:Arial, Helvetica, sans-serif;margin:0;background:var(--bg);color:#222}
+    header{background:white;box-shadow:0 2px 6px rgba(0,0,0,.08);position:sticky;top:0;z-index:50}
+    .container{max-width:1000px;margin:0 auto;padding:20px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:8px;background:var(--accent);color:white;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px}
+    nav{margin-left:auto}
+    nav a{margin:0 8px;text-decoration:none;color:var(--muted);font-weight:600}
+    .hero{display:flex;align-items:center;gap:24px;padding:36px 0}
+    .hero h1{margin:0;font-size:28px;color:var(--accent)}
+    .card{background:white;padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.05)}
+    section{padding:28px 0}
+    .staff-list{display:flex;flex-wrap:wrap;gap:12px}
+    .teacher{width:calc(33.333% - 8px);background:#fff;padding:10px;border-radius:8px;text-align:center}
+    .teacher img{width:100%;height:180px;object-fit:cover;border-radius:6px}
+    .news-item{margin-bottom:12px}
+    .gallery{display:flex;flex-wrap:wrap;gap:8px}
+    .gallery img{width:calc(33.333% - 8px);height:120px;object-fit:cover;border-radius:6px}
+    footer{padding:18px 0;text-align:center;color:var(--muted);background:white;border-top:1px solid #ddd}
+    @media (max-width:900px){.teacher{width:calc(50% - 8px)}.gallery img{width:calc(50% - 8px)}}
+    @media (max-width:520px){.teacher{width:100%}nav{display:none}.hero{flex-direction:column;align-items:flex-start} .logo{width:48px;height:48px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;align-items:center">
+      <div class="brand">
+        <div class="logo">28</div>
+        <div>
+          <div style="font-weight:700">28-SCHOOL Official</div>
+          <div style="font-size:13px;color:var(--muted)">Rasmiy maktab sayti</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">Biz haqimizda</a>
+        <a href="#news">Yangiliklar</a>
+        <a href="#teachers">O‘qituvchilar</a>
+        <a href="#gallery">Galereya</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>28-SCHOOL Official saytiga xush kelibsiz!</h1>
+        <p style="color:var(--muted)">Bu sayt maktab hayoti, yangiliklar, o‘qituvchilar va o‘quvchilar uchun foydali ma’lumotlarni taqdim etadi.</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="card">
+        <h2>Biz haqimizda</h2>
+        <p>28-SCHOOL — zamonaviy ta’lim uslublariga asoslangan maktab bo‘lib, o‘quvchilarning intellektual, ijtimoiy va ijodiy rivojlanishiga alohida e’tibor qaratadi.</p>
+      </div>
+    </section>
+
+    <section id="news">
+      <h2>Yangiliklar</h2>
+      <div class="card">
+        <div class="news-item"><strong>01.10.2025</strong> — 28-SCHOOL yangi o‘quv yilini ochiq dars bilan boshladi.</div>
+        <div class="news-item"><strong>15.09.2025</strong> — Maktab sport jamoasi tuman bosqichida g‘olib bo‘ldi.</div>
+      </div>
+    </section>
+
+    <section id="teachers">
+      <h2>O‘qituvchilar</h2>
+      <div class="staff-list">
+        <div class="teacher card">
+          <img src="teacher1.jpg" alt="O‘qituvchi 1">
+          <div style="padding-top:8px"><strong>Azizov O.</strong><div style="color:var(--muted);font-size:13px">Matematika o‘qituvchisi</div></div>
+        </div>
+        <div class="teacher card">
+          <img src="teacher2.jpg" alt="O‘qituvchi 2">
+          <div style="padding-top:8px"><strong>Gulnor A.</strong><div style="color:var(--muted);font-size:13px">Ingliz tili o‘qituvchisi</div></div>
+        </div>
+        <div class="teacher card">
+          <img src="teacher3.jpg" alt="O‘qituvchi 3">
+          <div style="padding-top:8px"><strong>Rustam B.</strong><div style="color:var(--muted);font-size:13px">Tarix o‘qituvchisi</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Galereya</h2>
+      <div class="gallery card">
+        <img src="g1.jpg" alt="foto1">
+        <img src="g2.jpg" alt="foto2">
+        <img src="g3.jpg" alt="foto3">
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Kontakt</h2>
+      <div class="card">
+        <p><strong>Email:</strong> info@28school.uz</p>
+        <p><strong>Manzil:</strong> Toshkent shahri</p>
+        <p><strong>Tel:</strong> +998 90 000 00 00</p>
+        <p>Sayt bo‘yicha takliflaringizni yuboring: <a href="mailto:info@28school.uz">info@28school.uz</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>© 2025 28-SCHOOL Official — Barcha huquqlar himoyalangan</small>
+    </div>
+  </footer>
+
+  <script>
+    // Havolalarni silliq scroll bilan o'tkazish
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        e.preventDefault();
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+      });
+    });
+  </script>
+</body>
+</html>
