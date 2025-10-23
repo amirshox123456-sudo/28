@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Oʻrnak Maktab — Bosh Sahifa</title>
+  <meta name="description" content="Oʻrnak Maktab — ta'lim, yangiliklar, qabul va kontaktlar" />
+  <style>
+    :root{--accent:#0b6bd6;--muted:#666;--bg:#f7f9fc}
+    *{box-sizing:border-box}
+    body{font-family:Arial, Helvetica, sans-serif;margin:0;background:var(--bg);color:#222}
+    header{background:white;box-shadow:0 2px 6px rgba(0,0,0,.08);position:sticky;top:0;z-index:50}
+    .container{max-width:1000px;margin:0 auto;padding:20px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:8px;background:var(--accent);color:white;display:flex;align-items:center;justify-content:center;font-weight:700}
+    nav{margin-left:auto}
+    nav a{margin:0 8px;text-decoration:none;color:var(--muted);font-weight:600}
+    .hero{display:flex;align-items:center;gap:24px;padding:36px 0}
+    .hero h1{margin:0;font-size:28px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px}
+    .card{background:white;padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(11,107,214,0.06)}
+    section{padding:28px 0}
+    .staff-list{display:flex;flex-wrap:wrap;gap:12px}
+    .teacher{width:calc(33.333% - 8px);background:#fff;padding:10px;border-radius:8px;text-align:center}
+    .teacher img{width:100%;height:180px;object-fit:cover;border-radius:6px}
+    .news-item{margin-bottom:12px}
+    .gallery{display:flex;flex-wrap:wrap;gap:8px}
+    .gallery img{width:calc(33.333% - 8px);height:120px;object-fit:cover;border-radius:6px}
+    footer{padding:18px 0;text-align:center;color:var(--muted)}
+    /* responsive */
+    @media (max-width:900px){.grid{grid-template-columns:1fr}.teacher{width:calc(50% - 8px)}.gallery img{width:calc(50% - 8px)}}
+    @media (max-width:520px){.teacher{width:100%}nav{display:none}.hero{flex-direction:column;align-items:flex-start} .logo{width:48px;height:48px}}
+    .nav-btn{display:none}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;align-items:center">
+      <div class="brand">
+        <div class="logo">OM</div>
+        <div>
+          <div style="font-weight:700">Oʻrnak Maktab</div>
+          <div style="font-size:13px;color:var(--muted)">Sifatli ta'lim — Yorqin kelajak</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">Biz haqimizda</a>
+        <a href="#departments">Bo‘limlar</a>
+        <a href="#news">Yangiliklar</a>
+        <a href="#teachers">Oʻqituvchilar</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div style="flex:1">
+        <h1>Oʻrnak Maktabga xush kelibsiz</h1>
+        <p style="color:var(--muted)">Biz 1995-yildan beri sifatli ta'lim beramiz. Oʻquvchilarning har tomonlama rivojlanishi — bizning asosiy maqsadimiz.</p>
+        <p><strong>Manzil:</strong> Toshkent shahri, Namuna ko‘chasi 10 | <strong>Tel:</strong> +998 90 123 45 67</p>
+      </div>
+      <div style="width:320px">
+        <div class="card">
+          <h3>Tezkor e'lonlar</h3>
+          <div style="font-size:14px;color:var(--muted)"><strong>20.10.2025:</strong> Yozgi ta'til uchun ro‘yxatdan o‘tish ochildi.</div>
+          <div style="margin-top:10px"><a href="#news">Batafsil</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="card">
+        <h2>Biz haqimizda</h2>
+        <p>Oʻrnak Maktab — mahalliy hamjamiyatga xizmat qiluvchi, zamonaviy ta'lim standartlariga moslashgan o‘quv muassasasi. Bizda matematika, tabiiy fanlar, tillar va san'at yo‘nalishlari bor.</p>
+      </div>
+    </section>
+
+    <section id="departments">
+      <h2>Bo‘limlar</h2>
+      <div class="grid">
+        <div>
+          <div class="card">
+            <h3>Boshlangʻich sinflar</h3>
+            <p>1–4-sinflar uchun asosiy bilimlar va o‘yin orqali ta’lim.</p>
+          </div>
+          <div class="card" style="margin-top:12px">
+            <h3>Oʻrta ta'lim</h3>
+            <p>5–9-sinflar: fanlarga chuqurroq kirish, qo‘shimcha darslar mavjud.</p>
+          </div>
+          <div class="card" style="margin-top:12px">
+            <h3>Yuqori sinflar</h3>
+            <p>10–11-sinflar: oliy ta'limga tayyorlov va qo‘shimcha tayyorlov kurslari.</p>
+          </div>
+        </div>
+        <aside>
+          <div class="card">
+            <h3>Qabul</h3>
+            <p>Qabul hujjatlari, test sanalari va shartlar: PDF yuklab olish.</p>
+            <p><a href="#">Qabul hujjatlari yuklab olish</a></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="news">
+      <h2>Yangiliklar</h2>
+      <div class="card">
+        <div class="news-item"><strong>01.10.2025</strong> — "Ilm yulduzlari" tanlovida maktab o‘rni e'lon qilindi.</div>
+        <div class="news-item"><strong>15.09.2025</strong> — Sport musobaqasi muvaffaqiyatli o‘tkazildi.</div>
+      </div>
+    </section>
+
+    <section id="teachers">
+      <h2>Oʻqituvchilar</h2>
+      <div class="staff-list">
+        <div class="teacher card">
+          <img src="teacher1.jpg" alt="O'qituvchi 1">
+          <div style="padding-top:8px"><strong>Azizov O.</strong><div style="color:var(--muted);font-size:13px">Matematika oʻqituvchisi</div></div>
+        </div>
+        <div class="teacher card">
+          <img src="teacher2.jpg" alt="O'qituvchi 2">
+          <div style="padding-top:8px"><strong>Gulnor A.</strong><div style="color:var(--muted);font-size:13px">Ingliz tili</div></div>
+        </div>
+        <div class="teacher card">
+          <img src="teacher3.jpg" alt="O'qituvchi 3">
+          <div style="padding-top:8px"><strong>Rustam B.</strong><div style="color:var(--muted);font-size:13px">Tarix</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Galereya</h2>
+      <div class="gallery card">
+        <img src="g1.jpg" alt="foto1">
+        <img src="g2.jpg" alt="foto2">
+        <img src="g3.jpg" alt="foto3">
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Kontakt</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Aloqa ma'lumotlari</h3>
+          <p><strong>Manzil:</strong> Toshkent, Namuna 10</p>
+          <p><strong>Tel:</strong> +998 90 123 45 67</p>
+          <p><strong>Email:</strong> <a href="mailto:info@maktab.uz">info@maktab.uz</a></p>
+          <h4>Onlayn murojaat</h4>
+          <!-- Kontakt formasi uchun oddiy mailto (server bo'lmasa) -->
+          <form onsubmit="event.preventDefault(); window.location='mailto:info@maktab.uz?subject=' + encodeURIComponent(document.getElementById('sub').value) + '&body=' + encodeURIComponent(document.getElementById('msg').value)">
+            <input id="sub" placeholder="Mavzu" style="width:100%;padding:8px;margin-bottom:8px" required>
+            <textarea id="msg" placeholder="Xabar" style="width:100%;padding:8px;height:110px" required></textarea>
+            <button type="submit" style="padding:10px 14px;border:none;background:var(--accent);color:white;border-radius:6px">Yuborish</button>
+          </form>
+        </div>
+        <div class="card">
+          <h3>Xarita</h3>
+          <p>Google Maps yoki OpenStreetMap iframe sini shu yerga qo‘yish mumkin.</p>
+          <div style="background:#eef;padding:12px;border-radius:6px;text-align:center">[Xarita iframe joylanadi]</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <small>© 2025 Oʻrnak Maktab — Barcha huquqlar himoyalangan</small>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // oddiy: havolalarni silliq scroll bilan
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        e.preventDefault();
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+      });
+    });
+  </script>
+</body>
+</html>
